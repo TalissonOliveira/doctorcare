@@ -170,3 +170,94 @@ nav button {
   border: none;
   cursor: pointer;
 }
+
+/* ======== MENU EXPANDED ======== */
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) { /* todos os elementos menos a nav.*/
+  display: none;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-expanded .menu {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  padding-top: var(--nav-height);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body.menu-expanded nav {
+  position: relative;
+}
+
+.menu ul:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-top: 6rem;
+}
+
+.menu ul li a {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  text-decoration: none;
+}
+
+.menu .button {
+  background-color: #fff;
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 4rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded  button {
+  position: relative;
+  z-index: 10;
+}
+
+body.menu-expanded .logo path {
+  fill: white;
+}
+
+body.menu-expanded  button path {
+  stroke: white;
+}

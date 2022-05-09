@@ -1,4 +1,12 @@
+window.addEventListener('scroll', onScroll)
+
+onScroll()
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnScroll()
+}
+
+function showNavOnScroll() {
   if (window.scrollY > 50) {
     navigation.classList.add('scroll')
   } else {
@@ -6,6 +14,14 @@ function onScroll() {
   }
 
   // window.scrollTo(0, document.body.scrollHeight)
+}
+
+function showBackToTopButtonOnScroll() {
+  if (window.scrollY > 500) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
 }
 
 function openMenu() {

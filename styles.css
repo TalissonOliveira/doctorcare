@@ -116,6 +116,13 @@ section .content p {
   padding-inline: 2.4rem;
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
 /* ======== NAVIGATION ======== */
 nav {
   display: flex;
@@ -223,13 +230,6 @@ body.menu-expanded .menu {
   text-decoration: none;
 
   border-radius: 4rem;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.2rem;
 }
 
 body.menu-expanded .logo,
@@ -372,4 +372,54 @@ body.menu-expanded  button path {
   display: flex;
   align-items: center;
   gap: .8rem;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding-block: 6rem;
+  text-align: left;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+footer .logo svg {
+  width: 23.6rem;
+  height: 3.1rem;
+}
+
+footer .logo path {
+  fill: #fff;
+}
+
+footer p {
+  color: var(--brand-beige);
+}
+
+footer p + p {
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+footer .social-links {
+  justify-content: flex-start;
+}
+
+/* ======== BACK TO TOP BUTTON ======== */
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
 }

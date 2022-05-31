@@ -5,7 +5,7 @@
 }
 
 :root {
-  --hue: 130;
+  --hue: 170;
 
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
@@ -599,6 +599,7 @@ footer .social-links {
     opacity: 1;
   }
 
+  nav#navigation.scroll .menu a.button.active,
   nav#navigation.scroll .menu a.button:hover {
     background-color: var(--primary-color);
     filter: brightness(1.3);

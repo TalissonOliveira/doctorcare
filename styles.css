@@ -383,7 +383,7 @@ body.menu-expanded  button path {
   margin-bottom: 6rem;
 }
 
-/* ======== ABOUT ======== */
+/* ======== CONTACT ======== */
 #contact {
   text-align: left;
 }
@@ -471,7 +471,7 @@ footer .social-links {
     padding-block: 8rem;
   }
 
-  section h2 {
+  section header h2 {
     font-size: 4rem;
     line-height: 5.2rem ;
   }
@@ -670,7 +670,7 @@ footer .social-links {
 
   /* ======== SERVICES ======== */
   #services h2 {
-    width: 47rem;
+    width: 49.7rem;
     margin-inline: auto;
   }
 
@@ -685,7 +685,7 @@ footer .social-links {
     flex-grow: 1;
   }
 
-  /* ======== SERVICES ======== */
+  /* ======== ABOUT ======== */
   #about .wrapper {
     grid-template-columns: 48rem 1fr;
     grid-template-areas: 'B A';
@@ -702,7 +702,31 @@ footer .social-links {
   }
 
   #about h2 {
-    max-width: 44.7rem;
+    width: 44.7rem;
+  }
+
+  /* ======== CONTACT ======== */
+  #contact .wrapper {
+    grid-template-columns: 1fr 52.5rem;
+    grid-template-areas: 'A B';
+    gap: 6.7rem;
+  }
+
+  #contact .col-a {
+    align-self: center;
+  }
+
+  #contact h2 {
+    width: 40.4rem;
+  }
+
+  #contact header,
+  #contact ul {
+    margin-bottom: 4rem;
+  }
+
+  #contact .button {
+    margin-bottom: 0;
   }
 
 }

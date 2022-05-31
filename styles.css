@@ -25,7 +25,7 @@
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 html,
@@ -729,4 +729,26 @@ footer .social-links {
     margin-bottom: 0;
   }
 
+  /* ======== FOOTER ======== */
+  footer {
+    padding-block: 8rem;
+  }
+
+  footer .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+  }
+
+  footer .col-a {
+    align-self: center;
+  }
+
+  footer .col-b {
+    align-self: center;
+    justify-self: flex-end;
+  }
+
+  footer p + p {
+    margin-bottom: 0;
+  }
 }

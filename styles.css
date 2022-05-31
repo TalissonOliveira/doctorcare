@@ -476,6 +476,14 @@ footer .social-links {
     line-height: 5.2rem ;
   }
 
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
   .wrapper {
     width: min(112rem, 100%);
     display: grid;
@@ -609,18 +617,13 @@ footer .social-links {
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
-    'content img'
+    'A B'
     'stats stats';
   }
 
   #home .col-a {
-    grid-area: content;
     text-align: left;
     align-self: center;
-  }
-
-  #home .col-b {
-    grid-area: img;
   }
 
   #home h1 {
@@ -680,6 +683,26 @@ footer .social-links {
   #services .card {
     width: 30%;
     flex-grow: 1;
+  }
+
+  /* ======== SERVICES ======== */
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+
+  }
+
+  #about .col-a {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
+
+  #about h2 {
+    max-width: 44.7rem;
   }
 
 }
